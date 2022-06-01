@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form onsubmit="getData()" name="myForm">
+    <label>User name : </label>
+    <input type = "text" name = "username" id = "userId" onblur = "focusBg()">
+    <label>Password : </label>
+    <input type = "text" name = "password" id = "pswdId" onblur = "changeBg()">
+
+    <button>Submit</button>
+     
+
+</form>
+
+    <script>
+
+    function getData(){
+        var x = document.myForm.username.value;
+        var y = document.myForm.password.value;
+
+        if((x==="vinayseelam.98@gmail.com") && (y==="Vinay@123"))
+        {
+            alert("Welcome " + x + " You are successfully logged in");
+        }
+        else {
+            alert("Username or password not matched");
+        }
+    }
+
+    function focusBg(){
+        document.getElementById("userId").style.backgroundColor = "blue";
+    }
+    function changeBg(){
+        document.getElementById("pswdId").style.backgroundColor = "green";
+    }
+      
+
+    </script>
+</body>
+</html>
