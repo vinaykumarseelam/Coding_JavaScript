@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>unshift() method add element from front </h1>
+<h1>slice() method selectes arguments from given index to n-1 index</h1>
     <p id = "line1"></p>
     <p id = "line2"></p>
     <p id = "line3"></p>
@@ -17,8 +17,8 @@
 
     const Group1 = ["Google", "Microsoft","Apple","Facebook","Netflix"];
      document.getElementById("line1").innerHTML = Group1;
-    Group1.unshift("Adobe","Paypal");
-document.getElementById("line2").innerHTML = Group1;
+    const sliceList = Group1.slice(0,3);
+document.getElementById("line2").innerHTML = sliceList;
 
     
     
