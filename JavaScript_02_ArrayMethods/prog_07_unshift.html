@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Splice () method addes or removes an element</h1>
+<h1>unshift() methods addes element from front </h1>
     <p id = "line1"></p>
     <p id = "line2"></p>
     <p id = "line3"></p>
@@ -16,14 +16,9 @@
     <script>
 
     const Group1 = ["Google", "Microsoft","Apple","Facebook","Netflix"];
-     
-    document.getElementById("line1").innerHTML = Group1;
-    Group1.splice(2,0,"Adobe","Oracle");
-    document.getElementById("line2").innerHTML = Group1 ;
-    Group1.splice(3,1,"ServiceNow","Uber");
-     document.getElementById("line3").innerHTML = Group1 ;
-
-
+     document.getElementById("line1").innerHTML = Group1;
+    Group1.unshift("Adobe","Paypal");
+document.getElementById("line2").innerHTML = Group1;
 
     
     
