@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>foreach</h1>
+    <p id = "line1"></p>
+    <p id = "line2"></p>
+    <p id = "line3"></p>
+
+    <script>
+
+   const  companies = [
+    {name:"jackwilliam", company: "ocwen outsourcing", startdate:"12/12/2021", endDate: "13/14/2022"},
+    {name:"john", company: "ocwen outsourcinga", startdate:"12/12/2019", endDate: "13/14/2023"},
+    {name:"jackwilliam", company: "ocwen outsourcings", startdate:"12/12/2018", endDate: "13/14/2024"},
+    {name:"johns", company: "ocwen outsourcingd", startdate:"12/12/2017", endDate: "13/14/2025"},
+    {name:"jackwilliam", company: "ocwen outsourcingf", startdate:"12/12/2016", endDate: "13/14/2026"},
+    {name:"jackwilliam", company: "ocwen outsourcingg", startdate:'12/12/2021', endDate: "13/14/2027"},
+    {name:"jackwilliam", company: "ocwen outsourcingh", startdate:"12/12/2021", endDate: "13/14/2028"},
+    {name:"jackwilliam", company: "ocwen outsourcingh", startdate:"12/12/2021", endDate: "13/14/2029"},
+    {name:"john", company: "ocwen outsourcingj", startdate:'12/12/2021', endDate: "13/14/20220"},
+    {name:"jackwilliam", company: "ocwen outsourcingj", startdate:"12/12/2021", endDate: "13/14/2022100"},
+    {name:"jackwilliam", company: "ocwen outsourcingk", startdate:"12/12/2021", endDate: "13/14/202223"},
+    {name:"john", company: "ocwen outsourcingp", startdate:"12/12/2021", endDate: "13/14/202256"},
+    {name:"jackwilliam", company: "ocwen outsourcingo", startdate:"12/12/2021", endDate: "13/14/202212"},
+    {name:"john", company: "ocwen outsourcinig", startdate:"12/12/2021", endDate: "13/14/202245"},
+];
+
+    
+  // for(i=0; i<companies.length; i++)
+   //{
+   //   document.write(companies[i].name + "<br>");
+  // }
+
+  companies.forEach( i => {
+      document.write(i.name + "<br>");
+  })
+
+   companies.forEach(f1);
+   function f1 (i){
+         document.write(i.company + "<br>");  
+   }
+
+   companies.forEach( i => {
+      document.write(i.startdate + "<br>");
+  });
+
+ 
+
+    </script>
+</body>
+</html>
