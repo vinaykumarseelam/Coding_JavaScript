@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>filter</h1>
+    <p id = "line1"></p>
+    <p id = "line2"></p>
+    <p id = "line3"></p>
+    <p id = "line4"></p>
+
+    <script>
+
+   const ages =[33,22,11,44,55,66,44,77,88,99,77,75,24,56,14,23,67,55];
+      document.getElementById("line1").innerHTML = ages;
+
+   let aboveAge = [];
+
+   for(i=0; i<ages.length; i++)
+   {
+       if(ages[i]>=18)
+       {
+           aboveAge.unshift(ages[i]);
+       }
+   }
+
+   document.getElementById("line2").innerHTML = aboveAge;
+
+   var aboveAge2 = ages.filter(function  (x) {
+if(x>=18){
+    return true
+}
+   })
+   document.getElementById("line3").innerHTML = aboveAge2;
+
+
+   var aboveAge3 = ages.filter((x) => x>=18)
+   document.getElementById("line4").innerHTML = aboveAge3;
+ 
+
+    </script>
+</body>
+</html>
