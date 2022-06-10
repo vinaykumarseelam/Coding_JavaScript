@@ -32,51 +32,33 @@
     {name:"john", company: "ocwen outsourcinig", startdate:"12/12/2021", endDate: "13/14/202245"},
 ];
    const ages =[33,22,11,44,55,66,44,77,88,99,77,75,24,56,14,23,67,55];
-      document.getElementById("line1").innerHTML = ages;
-
-   let aboveAge = [];
-   let  arrowFunction = [];
-
-   for(i=0; i<ages.length; i++)
-   {
-       if(ages[i]>=18)
-       {
-           aboveAge.unshift(ages[i]);
-       }
-   }
-
-   document.getElementById("line2").innerHTML = aboveAge;
-
-   var aboveAge2 = ages.filter(function  (x) {
-if(x>=18){
-    return true
-}
+      
+   const mapFunc1 = companies.map(function(x){
+       return x.company;
    })
-   document.getElementById("line3").innerHTML = aboveAge2;
+   console.log(mapFunc1);
+
+   const mapFunc2 = companies.map(x => x.startdate);
+   console.log(mapFunc2);
+
+   companies.map(function(x){
+       console.log(x.company);
+   })
 
 
-   var aboveAge3 = ages.filter((x) => x>=28)
-   document.getElementById("line4").innerHTML = aboveAge3;
-// To segregate the array that has name john
+   const mapTest1 = companies.map(function(x){
+       return `This is the list of company employees who is working ${x.name} [${x.startdate} to ${x.endDate}]`;
 
-const johnName = companies.filter(function (i) {
-    if(i.name === "john")
-    {
-        
-document.write("true" + "<br>"); 
-   }
-})
+   })
 
-const arrowFun = companies.filter(i => i.name === "john" );
-console.log(arrowFun);
+   console.log(mapTest1);
 
-const companyFilter = companies.filter(i => i.company === "ocwen outsourcingp")
+   const mapTest2 = companies.map(x => `${x.name} ${x.company} [${x.startdate} - ${x.endDate}]`);
+              console.log(mapTest2);
 
-console.log(companyFilter);
 
-const startdateFilter = companies.filter(startDate => startDate.startdate === "12/12/2021");
-console.log(startdateFilter);
-
+                   const mapTest3 = companies.map(y => `The Employee name is ${y.name} The compnay name is ${y.company} Starting and Ending dates ${y.startdate} - ${y.endDate}`);
+    console.log( mapTest3);
     </script>
 </body>
 </html>
