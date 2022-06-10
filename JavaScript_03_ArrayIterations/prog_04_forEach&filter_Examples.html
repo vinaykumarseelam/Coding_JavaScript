@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>filter</h1>
+    <p id = "line1"></p>
+    <p id = "line2"></p>
+    <p id = "line3"></p>
+    <p id = "line4"></p>
+
+    <script>
+  const  companies = [
+    {name:"jackwilliam1", company: "ocwen outsourcing1", startdate:1991, endDate: 1998},
+    {name:"jackwilliam2", company: "ocwen outsourcing2", startdate:1992, endDate: 1999},
+    {name:"jackwilliam3", company: "ocwen outsourcing3", startdate:1993, endDate: 2000},
+    {name:"jackwilliam4", company: "ocwen outsourcing4", startdate:1994, endDate: 2001},
+    {name:"jackwilliam5", company: "ocwen outsourcing5", startdate:1995, endDate: 2002},
+    {name:"jackwilliam6", company: "ocwen outsourcing5", startdate:1996, endDate: 2003},
+    {name:"jackwilliam7", company: "ocwen outsourcing4", startdate:1997, endDate: 2004},
+    {name:"jackwilliam8", company: "ocwen outsourcing2", startdate:1998, endDate: 2005},
+    {name:"jackwilliam9", company: "ocwen outsourcing1", startdate:1999, endDate: 2006}
+
+];
+
+  
+
+const ages =[33,22,11,44,55,66,44,77,88,99,77,75,24,56,14,23,67,55];
+
+
+
+      // General method of using forEach
+
+      for(i=0; i<companies.length;i++)
+      {
+      console.log(companies[i]);
+      }
+
+       companies.forEach(function(x){
+           console.log(x.name);
+       })
+
+       const companyName = companies.forEach(i => console.log(i.startdate));
+       console.log(companyName);
+
+
+       companies.forEach(function(x) {
+           console.log(x.company);  
+       })
+
+
+
+       // General Method of using Filter
+
+       var canDrink = [];
+       for(i = 0; i<ages.length;i++)
+       {
+           if(ages[i]>=50)
+           {
+               canDrink.push(ages[i]);
+           }
+       }
+       document.write(canDrink+ "<br>");
+
+       // Using Filter Iteration Method
+
+       ages.filter(function(x){
+           if(ages[x]>=50)
+           {
+               canDrink.push(ages[i]);
+           }
+       })
+       document.write(canDrink + "<br>");
+
+       const agesFIlter2 = ages.filter(x => x>=50);
+       document.write(agesFIlter2 + "<br>");
+
+
+       const agesFilter = ages.filter(x => x>=66);
+       document.write(agesFilter);
+    </script>
+</body>
+</html>
