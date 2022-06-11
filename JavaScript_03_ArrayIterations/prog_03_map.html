@@ -59,6 +59,41 @@
 
                    const mapTest3 = companies.map(y => `The Employee name is ${y.name} The compnay name is ${y.company} Starting and Ending dates ${y.startdate} - ${y.endDate}`);
     console.log( mapTest3);
+
+
+    // Maps Practice
+
+       const y = companies.map(function(x){
+            return x.company;
+        })
+        console.log(y);
+
+        console.log("*********************************");
+        const z = companies.map(function(x){
+            return 1 
+        })
+
+        console.log(z);
+
+
+        console.log("************************* MAP");
+
+        const a = companies.map(x => `${x.name} started working on ${x.startdate} till ${x.endDate}`);
+        console.log(a);
+
+        console.log("************************ multiplying Ages");
+
+        const k = ages.map(x => x*2 );
+        console.log(k);
+        
+
+        const j = ages.map(function(x){
+            return x*2
+        })
+
+        console.log(j);
+
+
     </script>
 </body>
 </html>
