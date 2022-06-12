@@ -77,6 +77,33 @@ console.log(companyFilter);
 const startdateFilter = companies.filter(startDate => startDate.startdate === "12/12/2021");
 console.log(startdateFilter);
 
+
+// Geeks for Geeks Practice 
+
+//Example1:  In this example, the method filter() creates a new array consisting of only those 
+//            elements that satisfy the condition checked by canVote() function.
+
+const canVote = [18,22,55,44,11,20];
+
+const voteVerification = canVote.filter(x => x>=18);
+document.write(voteVerification + "<br>");   
+
+//Example 2: In this example, the method filter() creates a new array 
+//           consisting of only those elements that satisfy the condition checked by isPositive() function.
+
+
+const mixedArray = [112, 52, 0, -1, 944];
+
+const a = mixedArray.filter(a => a>0);
+document.write(a + "<br>");
+
+// Example 3: In this example, the method filter() 
+//             creates a new array consisting of only those elements that satisfy the condition checked by isEven() function. 
+
+const unEven = [11, 98, 31, 23, 944];
+
+const even = unEven.filter( e => e%2 == 0);
+document.write(even);
     </script>
 </body>
 </html>
