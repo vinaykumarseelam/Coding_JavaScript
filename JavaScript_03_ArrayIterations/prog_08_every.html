@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Every </h1>
+    <p id = "line1"></p>
+    <p id = "line2"></p>
+    <p id = "line3"></p>
+    <p id = "line4"></p>
+
+    <script>
+  const number = [3,6,14,9,10,3,19];
+
+  const everyResult = number.every(function(x){
+      if(x>9){
+          return true;
+      }
+  });
+
+  console.log(everyResult);
+  
+ const everyResult2 = number.every(x => x>2);
+ console.log(everyResult2);
+
+   </script>
+</body>
+</html>
