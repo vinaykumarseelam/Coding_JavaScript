@@ -1,5 +1,6 @@
 function checkSpeed(speed) {
-  var currentSpeed = speed - 70;
+  var speedLimit = 70;
+  var currentSpeed = speed - speedLimit;
   if (speed <= 74) {
     console.log("ok");
   } else if (currentSpeed < 60) {
@@ -10,4 +11,4 @@ function checkSpeed(speed) {
   }
 }
 
-checkSpeed(150);
+checkSpeed(100);
