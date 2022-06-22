@@ -10,16 +10,19 @@ const x = remember()(7);
 console.log(x);
 
 //Example 2
-
+let name = "seelam";
 function vinay() {
   let name = "vinay";
   function kumar() {
     let name = "kumar";
-    function reddy() {
-      let name = "reddy";
-      return name;
-    }
+    console.log(name);
+    // function reddy() {
+    //  let name = "future";
+    //  console.log(name);
+    //}
+    // return reddy;
   }
+  return kumar;
 }
-
-console.log(vinay()());
+vinay()();
+//vinay()()();
