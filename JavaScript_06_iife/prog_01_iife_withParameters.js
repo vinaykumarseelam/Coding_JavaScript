@@ -3,7 +3,7 @@
 // A function declaration defines a function and does not require  a variable to be assigned to it.
 // It simply declares a function, and doesn't itself return a value.
 
-//(Immediatly invoked functoin expression)
+//(Immediatly invoked function expression)
 (function x(name) {
   console.log(`say hi ${name}`);
 })("vinay Kumar Reddy");
