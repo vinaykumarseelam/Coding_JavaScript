@@ -19,3 +19,14 @@ function simple() {
   return c;
 }
 simple()();
+
+//----------------------Hoisting-------------------------
+
+function x() {
+  var a = 5;
+  console.log(a);
+}
+
+var b = 1;
+console.log(b);
+x();
