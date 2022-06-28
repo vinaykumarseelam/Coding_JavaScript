@@ -4,17 +4,24 @@
 // It simply declares a function, and doesn't itself return a value.
 
 //(Immediatly invoked function expression)
-(function x(name) {
+
+const name = "scope";
+(function x() {
+  const lastname = "seelam";
+  //const name = "Vinay Kumar Reddy";
   console.log(`say hi ${name}`);
-})("vinay Kumar Reddy");
+})();
+//console.log(lastname);
 
 //Regular Method
 
 x = function (nationality) {
+  var nationality = "UK";
   console.log(`My nationality is ${nationality}`);
 };
 
-x("Indian");
+x();
+//console.log(nationality);
 
 // syntax : (function () {})()
 
