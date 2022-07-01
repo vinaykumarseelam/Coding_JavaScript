@@ -1,3 +1,5 @@
+//----------------------Function Example ---------------
+
 let username = "seelam";
 
 function userName() {
